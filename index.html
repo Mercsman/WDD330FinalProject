@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <title>D&D Character Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="menu-container" onclick="toggleMenu()">
+        <div class="menu-icon" id="menuIcon"></div>
+    </div>
+
+    <h1 id="title-separator">D&D Character Creator</h1>
+
+    <button onclick="randomRaceAndClass()">Random Race and Class</button>
+
+    <div id="result-container"></div>
+
+    <div id="dice-container">
+        <h2>Dice Rolls</h2>
+        <label for="dice">Select a dice:</label>
+        <select id="dice">
+            <option value="d4">d4</option>
+            <option value="d6">d6</option>
+            <option value="d8">d8</option>
+            <option value="d10">d10</option>
+            <option value="d12">d12</option>
+            <option value="d20">d20</option>
+            <option value="d100">d100</option>
+        </select>
+        <button onclick="rollDice()">Roll Dice</button>
+        <p id="dice-result"></p>
+        
+        <!-- <a href="inventory.html">Go to Inventory</a> -->
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Character Creator</a>
+            <a href="inventory.html">Inventory</a>
+        </div>
+    
+        <script src="script.js"></script>
+    </div>
+
+    <div id="abilities-container">
+        <h2>Adjust Ability Stats</h2>
+        <ul id="abilities-list">
+            <li id="strength" class="ability-item" onclick="adjustStat('strength')">
+                Strength:
+                <div class="input-container">
+                    <input type="number" id="strength-value" value="10">
+                    <span id="strength-modifier" class="modifier">(0)</span>
+                </div>
+            </li>
+            <li id="dexterity" class="ability-item" onclick="adjustStat('dexterity')">
+                Dexterity:
+                <div class="input-container">
+                    <input type="number" id="dexterity-value" value="10">
+                    <span id="dexterity-modifier" class="modifier">(0)</span>
+                </div>
+            </li>
+            <li id="constitution" class="ability-item" onclick="adjustStat('constitution')">
+                Constitution:
+                <div class="input-container">
+                    <input type="number" id="constitution-value" value="10">
+                    <span id="constitution-modifier" class="modifier">(0)</span>
+                </div>
+            </li>
+            <li id="intelligence" class="ability-item" onclick="adjustStat('intelligence')">
+                Intelligence:
+                <div class="input-container">
+                    <input type="number" id="intelligence-value" value="10">
+                    <span id="intelligence-modifier" class="modifier">(0)</span>
+                </div>
+            </li>
+            <li id="wisdom" class="ability-item" onclick="adjustStat('wisdom')">
+                Wisdom:
+                <div class="input-container">
+                    <input type="number" id="wisdom-value" value="10">
+                    <span id="wisdom-modifier" class="modifier">(0)</span>
+                </div>
+            </li>
+            <li id="charisma" class="ability-item" onclick="adjustStat('charisma')">
+                Charisma:
+                <div class="input-container">
+                    <input type="number" id="charisma-value" value="10">
+                    <span id="charisma-modifier" class="modifier">(0)</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>

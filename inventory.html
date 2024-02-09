@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <title>D&D Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="menu-container" onclick="toggleMenu()">
+        <div class="menu-icon" id="menuIcon"></div>
+    </div>
+
+    <h1 id="title-separator">D&D Inventory</h1>
+
+    <form id="inventory-form">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+        <button type="submit">Add Item</button>
+    </form>
+
+    <ul id="inventory-list"></ul>
+
+    <!-- <a href="index.html">Go back to Character Creator</a> -->
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Character Creator</a>
+        <a href="inventory.html">Inventory</a>
+    </div>
+
+    <script src="inventory.js"></script>
+    <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#title-separator {
+    margin: 20px 0;
+    border-bottom: 2px solid #000;
+}
+
+#dice-container,
+#abilities-container {
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#abilities-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ability-item {
+    width: calc(100% - 20px);
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#abilities-list li {
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    margin-left: 10px;
+}
+
+.input-container input {
+    width: 40px;
+}
+
+.modifier {
+    margin-left: 5px;
+}
+
+/* Hamburger menu styles */
+.menu-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-icon.active {
+    background-color: #fff;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#inventory-list {
+    list-style: none;
+    padding: 0;
+}
+
+.inventory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.remove-button {
+    background-color: #ff6262;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .ability-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links a {
+        border-bottom: 1px solid #ddd;
+    }
+    .container {
+        padding: 40px;
+    }
+    
+    .ability-item {
+        width: calc(33.33% - 20px);
+    }
+}
