@@ -125,6 +125,17 @@ h1, h2 {
     cursor: pointer;
 }
 
+.spell-column {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.spell-list {
+    list-style: none;
+    padding: 0;
+}
+
+
 @media only screen and (min-width: 600px) {
     .ability-item {
         width: calc(50% - 20px);

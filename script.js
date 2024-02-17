@@ -89,3 +89,4 @@ function toggleMenu() {
     menuIcon.classList.toggle('active');
     navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
 }
+
